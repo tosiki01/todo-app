@@ -1,0 +1,15 @@
+.the-input {
+    display: flex;
+    gap: 10px;
+}
+
+#to-input {
+    border: 2px solid red;
+    width: 200px;
+    
+}
+
+
+#the-button {
+    padding: 8px 12px;
+}
