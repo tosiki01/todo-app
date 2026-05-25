@@ -34,11 +34,32 @@ function addTodo(text) {
     document.createElement("button");
     deleteBtn.textContent = "削除";
     deleteBtn.addEventListener("click" ,
-        function() { li.remove();
-
-    });
+        function() {
+             li.remove();
+             saveTodos();
+            
+});
     li.appendChild(deleteBtn);
     list.appendChild(li);
+    saveTodos();
+}
+
+
+function saveTodos() {
+  localStorage.setItem("todo" , list.innerHTML);
+}
+
+const savedTodo = 
+localStorage.getItem("todo");
+
+if(savedTodo) {
+    list.innerHTML = savedTodo;
+    list.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", function() {
+            btn.parentElement.remove();
+            saveTodos();
+        });
+    });
 }
 
 
