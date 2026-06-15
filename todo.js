@@ -12,11 +12,12 @@ function handleAdd() {
 }
 
 input.addEventListener("keydown" ,
-function(e) {
-    if (e.key === "Enter") {
+function(key) {
+    console.log(key.key);
+    if (key.key === "Enter") {
         handleAdd();
     }
-    if (e.key === "Escape") {
+    if (key.key === "Delete") {
         input.value = "";
     }
 });

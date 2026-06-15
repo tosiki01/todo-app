@@ -1,15 +1,71 @@
 .the-input {
     display: flex;
     gap: 10px;
+    align-items: center;
+    width: 250px;
+    border-radius:30px;
+    padding: 5px 10px;
+
+    box-shadow: 0 10px 20px
+    rgba(0,0,0,0.5);
 }
 
 #to-input {
-    border: 2px solid red;
-    width: 200px;
-    
+    flex: 1;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+
 }
+
+    span {
+        font-size: 40px;
+    }
+    
 
 
 #the-button {
-    padding: 8px 12px;
+    padding: 10px 12px;
+    border-radius : 0px;
+    background-color:  blueviolet;
+    color: white;
+    align-items: center;
+     box-shadow: 0 10px 20px
+    rgba(0,0,0,1);
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+h1 { font-size: 100px;
+     text-align: center;
+
+}
+
+.blue {
+    color: blue;
+}
+
+.red { 
+    color: red;
+
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+body {
+    background: linear-gradient(to right, skyblue, white);
 }
