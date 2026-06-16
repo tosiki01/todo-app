@@ -1,15 +1,12 @@
-const input=
-document.getElementById("to-input");
-const button=
-document.getElementById("the-button");
-const list=
-document.getElementById("the-list");
-
 function handleAdd() {
     if (input.value.trim() === "") return;
     addTodo(input.value);
     input.value = "";
 }
+
+const input=
+document.getElementById("to-input");
+
 
 input.addEventListener("keydown" ,
 function(key) {
@@ -22,10 +19,17 @@ function(key) {
     }
 });
 
-    
+const button=
+document.getElementById("the-button");
+
+
     
 button.addEventListener("click" ,
 handleAdd);
+
+
+const list=
+document.getElementById("the-list");
 
 
 function addTodo(text) {
